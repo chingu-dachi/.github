@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>chinguDachi - 한일 AI 번역 채팅 플랫폼</title>
+  <meta name="description" content="언어 장벽 없는 한일 실시간 AI 번역 채팅 네트워킹 플랫폼. 친구다치." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Language Toggle -->
+  <div class="lang-toggle">
+    <button class="active" data-set-lang="ko">한국어</button>
+    <button data-set-lang="ja">日本語</button>
+  </div>
+
+  <div class="container">
+
+    <!-- Hero -->
+    <header class="hero">
+      <div class="hero-logo">💬</div>
+      <h1>chinguDachi</h1>
+      <p class="subtitle">
+        <span data-lang="ko">한국어 '친구' + 일본어 '友達(도모다치)'</span>
+        <span data-lang="ja">韓国語 '친구(チング)' + 日本語 '友達(トモダチ)'</span>
+      </p>
+      <p class="tagline">
+        <span data-lang="ko">언어 장벽 없이 한국인과 일본인이 모국어로 자연스럽게 대화할 수 있는 AI 실시간 번역 채팅 플랫폼</span>
+        <span data-lang="ja">言語の壁なく韓国人と日本人が母国語で自然に会話できるAIリアルタイム翻訳チャットプラットフォーム</span>
+      </p>
+      <div class="badges">
+        <span class="badge badge--coral">
+          <span data-lang="ko">MVP 개발중</span>
+          <span data-lang="ja">MVP開発中</span>
+        </span>
+        <span class="badge badge--indigo">AI Realtime Translation</span>
+        <span class="badge badge--green">Spring · React · TypeScript</span>
+      </div>
+    </header>
+
+    <!-- About -->
+    <section>
+      <h2>
+        <span data-lang="ko">친구다치란?</span>
+        <span data-lang="ja">チングダチとは？</span>
+      </h2>
+      <p class="section-desc">
+        <span data-lang="ko">한국과 일본 간 여행 수요가 폭발적으로 늘고 있지만, 언어 장벽이 가장 큰 허들입니다. 친구다치는 AI 실시간 번역으로 한국어와 일본어 사이의 벽을 허물어, 양국 사용자가 모국어로 자연스럽게 대화할 수 있는 채팅 기반 네트워킹 플랫폼입니다.</span>
+        <span data-lang="ja">日本と韓国の間で旅行需要が爆発的に増加していますが、言語の壁が最大の障壁です。チングダチはAIリアルタイム翻訳で韓国語と日本語の壁を取り払い、両国のユーザーが母国語で自然に会話できるチャットベースのネットワーキングプラットフォームです。</span>
+      </p>
+    </section>
+
+    <!-- Features -->
+    <section>
+      <h2>
+        <span data-lang="ko">핵심 기능</span>
+        <span data-lang="ja">コア機能</span>
+      </h2>
+      <div class="features">
+        <div class="feature-card">
+          <div class="icon">🤖</div>
+          <h3>
+            <span data-lang="ko">AI 실시간 번역</span>
+            <span data-lang="ja">AIリアルタイム翻訳</span>
+          </h3>
+          <p>
+            <span data-lang="ko">메시지를 보내면 2초 이내에 자동 번역. 번역문과 원문이 동시에 표시되어 언어 학습에도 도움됩니다.</span>
+            <span data-lang="ja">メッセージを送ると2秒以内に自動翻訳。翻訳文と原文が同時に表示され、語学学習にも役立ちます。</span>
+          </p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">🎯</div>
+          <h3>
+            <span data-lang="ko">관심사 매칭</span>
+            <span data-lang="ja">趣味マッチング</span>
+          </h3>
+          <p>
+            <span data-lang="ko">15개 관심사 태그로 취향이 맞는 상대를 찾아 바로 대화를 시작할 수 있습니다.</span>
+            <span data-lang="ja">15の興味タグで趣味の合う相手を見つけてすぐに会話を始められます。</span>
+          </p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">🌏</div>
+          <h3>
+            <span data-lang="ko">이중 언어 UI</span>
+            <span data-lang="ja">バイリンガルUI</span>
+          </h3>
+          <p>
+            <span data-lang="ko">국적 선택 즉시 전체 UI가 해당 언어로 전환됩니다.</span>
+            <span data-lang="ja">国籍選択と同時にUI全体が該当言語に切り替わります。</span>
+          </p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">⚡</div>
+          <h3>
+            <span data-lang="ko">간편한 시작</span>
+            <span data-lang="ja">かんたんスタート</span>
+          </h3>
+          <p>
+            <span data-lang="ko">Google 로그인 한 번이면 프로필 설정 후 즉시 채팅 시작.</span>
+            <span data-lang="ja">Googleログイン一回でプロフィール設定後すぐにチャット開始。</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Translation Flow -->
+    <section>
+      <h2>
+        <span data-lang="ko">번역은 어떻게 작동하나요?</span>
+        <span data-lang="ja">翻訳はどう動くの？</span>
+      </h2>
+      <div class="flow-diagram">
+        <div class="flow-step">
+          <div class="flow-number">1</div>
+          <div class="flow-content">
+            <h4>
+              <span data-lang="ko">🇰🇷 한국어 메시지 전송</span>
+              <span data-lang="ja">🇰🇷 韓国語メッセージ送信</span>
+            </h4>
+            <p>
+              <span data-lang="ko">내 화면에 즉시 표시 (Optimistic UI)</span>
+              <span data-lang="ja">自分の画面に即時表示 (Optimistic UI)</span>
+            </p>
+          </div>
+        </div>
+        <div class="flow-step">
+          <div class="flow-number">2</div>
+          <div class="flow-content">
+            <h4>
+              <span data-lang="ko">서버가 메시지 수신</span>
+              <span data-lang="ja">サーバーがメッセージ受信</span>
+            </h4>
+            <p>WebSocket</p>
+          </div>
+        </div>
+        <div class="flow-step">
+          <div class="flow-number">3</div>
+          <div class="flow-content">
+            <h4>
+              <span data-lang="ko">AI 번역</span>
+              <span data-lang="ja">AI翻訳</span>
+            </h4>
+            <p>
+              <span data-lang="ko">"자연스러운 일본어 구어체로 번역"</span>
+              <span data-lang="ja">「自然な日本語の口語体に翻訳」</span>
+            </p>
+          </div>
+        </div>
+        <div class="flow-step">
+          <div class="flow-number">4</div>
+          <div class="flow-content">
+            <h4>
+              <span data-lang="ko">번역 완료 → DB 저장</span>
+              <span data-lang="ja">翻訳完了 → DB保存</span>
+            </h4>
+            <p>
+              <span data-lang="ko">원문 + 번역문 저장</span>
+              <span data-lang="ja">原文 + 翻訳文保存</span>
+            </p>
+          </div>
+        </div>
+        <div class="flow-step">
+          <div class="flow-number">5</div>
+          <div class="flow-content">
+            <h4>
+              <span data-lang="ko">실시간 전달</span>
+              <span data-lang="ja">リアルタイム配信</span>
+            </h4>
+            <p>
+              <span data-lang="ko">🇯🇵 일본인: 번역문(크게) + 원문(작게) | 🇰🇷 한국인: 번역 완료 상태 반영</span>
+              <span data-lang="ja">🇯🇵 日本人: 翻訳文(大) + 原文(小) | 🇰🇷 韓国人: 翻訳完了ステータス反映</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tech Stack -->
+    <section>
+      <h2>
+        <span data-lang="ko">기술 스택</span>
+        <span data-lang="ja">技術スタック</span>
+      </h2>
+      <table class="tech-table">
+        <thead>
+          <tr>
+            <th data-lang="ko">영역</th>
+            <th data-lang="ja">領域</th>
+            <th data-lang="ko">기술</th>
+            <th data-lang="ja">技術</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-lang="ko">프론트엔드</td>
+            <td data-lang="ja">フロントエンド</td>
+            <td>React + Vite (Web), Expo (Mobile), Turborepo</td>
+          </tr>
+          <tr>
+            <td data-lang="ko">백엔드</td>
+            <td data-lang="ja">バックエンド</td>
+            <td>Kotlin + Spring Boot 3.x</td>
+          </tr>
+          <tr>
+            <td data-lang="ko">실시간 통신</td>
+            <td data-lang="ja">リアルタイム通信</td>
+            <td>WebSocket</td>
+          </tr>
+          <tr>
+            <td data-lang="ko">AI 번역</td>
+            <td data-lang="ja">AI翻訳</td>
+            <td>LLM</td>
+          </tr>
+          <tr>
+            <td data-lang="ko">데이터베이스</td>
+            <td data-lang="ja">データベース</td>
+            <td>PostgreSQL</td>
+          </tr>
+          <tr>
+            <td data-lang="ko">인증</td>
+            <td data-lang="ja">認証</td>
+            <td>Google OAuth 2.0</td>
+          </tr>
+          <tr>
+            <td data-lang="ko">스타일링</td>
+            <td data-lang="ja">スタイリング</td>
+            <td>Tailwind CSS + NativeWind</td>
+          </tr>
+          <tr>
+            <td data-lang="ko">상태 관리</td>
+            <td data-lang="ja">状態管理</td>
+            <td>TanStack Query + Zustand</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Roadmap -->
+    <section>
+      <h2>
+        <span data-lang="ko">로드맵</span>
+        <span data-lang="ja">ロードマップ</span>
+      </h2>
+      <div class="roadmap">
+        <div class="roadmap-item">
+          <div class="roadmap-marker">
+            <div class="roadmap-dot roadmap-dot--active"></div>
+            <div class="roadmap-line"></div>
+          </div>
+          <div class="roadmap-content">
+            <h3>Phase 1 — MVP</h3>
+            <div class="phase-time">
+              <span data-lang="ko">현재 개발 중</span>
+              <span data-lang="ja">現在開発中</span>
+            </div>
+            <p>
+              <span data-lang="ko">간편 로그인, 1:1 AI 번역 채팅, 관심사 매칭, 이중 언어 UI</span>
+              <span data-lang="ja">簡単ログイン、1:1 AI翻訳チャット、興味マッチング、バイリンガルUI</span>
+            </p>
+          </div>
+        </div>
+        <div class="roadmap-item">
+          <div class="roadmap-marker">
+            <div class="roadmap-dot"></div>
+            <div class="roadmap-line"></div>
+          </div>
+          <div class="roadmap-content">
+            <h3>Phase 2</h3>
+            <div class="phase-time">
+              <span data-lang="ko">출시 후</span>
+              <span data-lang="ja">リリース後</span>
+            </div>
+            <p>
+              <span data-lang="ko">SNS 피드, 추가 로그인 수단, 오프라인 모임</span>
+              <span data-lang="ja">SNSフィード、追加ログイン手段、オフライン集まり</span>
+            </p>
+          </div>
+        </div>
+        <div class="roadmap-item">
+          <div class="roadmap-marker">
+            <div class="roadmap-dot"></div>
+          </div>
+          <div class="roadmap-content">
+            <h3>Phase 3</h3>
+            <div class="phase-time">
+              <span data-lang="ko">장기</span>
+              <span data-lang="ja">長期</span>
+            </div>
+            <p>
+              <span data-lang="ko">지도 연동, 어학 스터디 기능</span>
+              <span data-lang="ja">地図連携、語学スタディ機能</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tech Blog -->
+    <section>
+      <h2>Tech Blog</h2>
+      <p class="section-desc">
+        <span data-lang="ko">개발 과정에서의 기술적 도전과 의사결정을 기록합니다.</span>
+        <span data-lang="ja">開発過程での技術的チャレンジと意思決定を記録します。</span>
+      </p>
+      <ul class="blog-list">
+        <li>
+          <span class="blog-title">
+            <span data-lang="ko">AI 번역 API 선택기</span>
+            <span data-lang="ja">AI翻訳API選定記</span>
+          </span>
+          <span class="blog-tag">Coming soon</span>
+        </li>
+        <li>
+          <span class="blog-title">
+            <span data-lang="ko">실시간 채팅 아키텍처</span>
+            <span data-lang="ja">リアルタイムチャットアーキテクチャ</span>
+          </span>
+          <span class="blog-tag">Coming soon</span>
+        </li>
+        <li>
+          <span class="blog-title">
+            <span data-lang="ko">한일 이중 언어 UX 설계</span>
+            <span data-lang="ja">日韓バイリンガルUXデザイン</span>
+          </span>
+          <span class="blog-tag">Coming soon</span>
+        </li>
+        <li>
+          <span class="blog-title">
+            <span data-lang="ko">MVP 비용 최적화</span>
+            <span data-lang="ja">MVPコスト最適化</span>
+          </span>
+          <span class="blog-tag">Coming soon</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Developer -->
+    <section>
+      <h2>
+        <span data-lang="ko">개발자</span>
+        <span data-lang="ja">開発者</span>
+      </h2>
+      <div class="developer">
+        <img class="dev-avatar" src="https://github.com/shoeone96.png" alt="Won" />
+        <div class="dev-name">Won</div>
+        <div class="dev-role">Backend (Java/Spring) · Frontend (React/TS)</div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>
+      <span data-lang="ko">한국어 '친구' + 日本語 '友達' = <strong>친구다치</strong></span>
+      <span data-lang="ja">韓国語 '친구' + 日本語 '友達' = <strong>チングダチ</strong></span>
+    </p>
+    <p>
+      <a href="https://github.com/chingu-dachi">GitHub</a>
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
