@@ -16,7 +16,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/status-MVP_개발중-FF6B6B?style=flat-square" alt="Status" />
   <img src="https://img.shields.io/badge/AI-Realtime_Translation-6366F1?style=flat-square" alt="AI" />
-  <img src="https://img.shields.io/badge/stack-Spring_·_React_·_TypeScript-333?style=flat-square" alt="Stack" />
+  <img src="https://img.shields.io/badge/stack-Spring_Boot_4.0_·_React_19_·_TypeScript-333?style=flat-square" alt="Stack" />
   <img src="https://img.shields.io/badge/lang-한국어_·_日本語-10B981?style=flat-square" alt="Languages" />
 </p>
 
@@ -66,17 +66,49 @@ Google 로그인 한 번이면 바로 시작. 복잡한 가입 과정 없이 프
 
 ---
 
+## 아키텍처
+
+```mermaid
+graph TB
+  subgraph Client
+    WEB["React 19 + Vite 6<br/>(Web)"]
+    MOB["Expo<br/>(Mobile)"]
+  end
+
+  subgraph Backend
+    API["Kotlin 2.3<br/>Spring Boot 4.0"]
+    WS["WebSocket<br/>(STOMP)"]
+  end
+
+  subgraph Infrastructure
+    DB[(PostgreSQL)]
+    CACHE[(Redis)]
+    AI["LLM<br/>Translation"]
+  end
+
+  WEB -->|HTTP / ky| API
+  WEB -->|WebSocket| WS
+  MOB -->|HTTP / ky| API
+  MOB -->|WebSocket| WS
+  API --> DB
+  API --> CACHE
+  WS -->|번역 요청| AI
+  AI -->|번역 결과| WS
+```
+
+---
+
 ## 기술 스택
 
 | 영역 | 기술 |
 |------|------|
-| **프론트엔드** | React + Vite (Web), Expo (Mobile), Turborepo 모노레포 |
-| **백엔드** | Kotlin + Spring Boot 3.x |
-| **실시간 통신** | WebSocket |
+| **프론트엔드** | React 19 + Vite 6 (Web), Expo (Mobile), Turborepo 모노레포 |
+| **백엔드** | Kotlin 2.3 + Spring Boot 4.0 |
+| **실시간 통신** | WebSocket (STOMP) |
 | **AI 번역** | LLM 기반 실시간 번역 |
-| **데이터베이스** | PostgreSQL |
+| **데이터베이스** | PostgreSQL + Redis |
 | **인증** | Google OAuth 2.0 |
-| **스타일링** | Tailwind CSS + NativeWind |
+| **스타일링** | Tailwind CSS v4 + NativeWind |
 | **상태 관리** | TanStack Query + Zustand |
 
 ---
@@ -103,9 +135,9 @@ Google 로그인 한 번이면 바로 시작. 복잡한 가입 과정 없이 프
 
 | 레포 | 설명 | 상태 |
 |------|------|------|
-| [**.github**](https://github.com/chingu-dachi/.github) | Organization 소개 + Tech Blog | Active |
-| **frontend** | React + Expo 모노레포 (Turborepo) | 개발 중 |
-| **backend** | Kotlin + Spring Boot API 서버 | 준비 중 |
+| [**.github**](https://github.com/chingu-dachi/.github) | Organization 소개 + Tech Blog | Public |
+| **frontend** | React 19 + Expo 모노레포 (Turborepo) | Private |
+| **backend** | Kotlin 2.3 + Spring Boot 4.0 API 서버 | Private |
 
 ---
 
@@ -120,7 +152,7 @@ Google 로그인 한 번이면 바로 시작. 복잡한 가입 과정 없이 프
         <sub><b>Won</b></sub>
       </a>
       <br />
-      <sub>Backend (Java/Spring) · Frontend (React/TS)</sub>
+      <sub>Backend (Kotlin/Spring) · Frontend (React/TS)</sub>
     </td>
   </tr>
 </table>
@@ -129,5 +161,6 @@ Google 로그인 한 번이면 바로 시작. 복잡한 가입 과정 없이 프
 
 <p align="center">
   <sub>Built with ❤️ for 한일 교류</sub><br/>
-  <sub>한국어 '친구' + 日本語 '友達' = <b>친구다치</b></sub>
+  <sub>한국어 '친구' + 日本語 '友達' = <b>친구다치</b></sub><br/><br/>
+  <sub>&copy; 2025 chinguDachi. All rights reserved.</sub>
 </p>
