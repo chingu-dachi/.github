@@ -21,6 +21,8 @@
 </p>
 
 <p align="center">
+  <a href="https://dev.chingu-dachi.com">🚀 Dev Site</a>
+  &nbsp;·&nbsp;
   <a href="https://chingu-dachi.github.io/.github/">🌐 소개 사이트</a>
   &nbsp;·&nbsp;
   <a href="https://github.com/chingu-dachi/.github/tree/main/articles">📝 Tech Blog</a>
